@@ -1,66 +1,53 @@
-# 🤍 Sincere Apology Letter Website
+# 🤍 Heartfelt Apology Website for Mam
 
-A self-hosted, interactive apology website crafted with genuine remorse, tenderness, and respect. It features an interactive envelope opening, soft floating sakura petals and starlight particles, dreamlike ambient music (synthesized, offline-ready), responsive design, and customizable reflection sections.
-
----
-
-## 📁 Project Structure
-
-```text
-sorry-website/
-├── index.html        # Main page structure & UI
-├── style.css         # Romantic dusk/light theme, glassmorphism, animations
-├── app.js           # Envelope opening, synthesized chords audio, petal physics
-├── config.js         # ⭐ EDIT THIS to customize her name, your letter & memories!
-├── serve.py          # Instant Python server for local testing & hosting
-├── Dockerfile        # Container image using Alpine Nginx
-└── docker-compose.yml# 1-command container deployment
-```
+A dedicated, tender, and respectful apology website created for the most important person in your life.
 
 ---
 
-## ✍️ How to Personalize (1 Minute)
+## 🚀 How to Host on GitHub Pages (Free & Live in 2 Minutes)
 
-Open `config.js` in any text editor. Everything is clearly labeled:
+Because this website uses pure HTML5, CSS3, and modern JavaScript with relative asset paths, it runs seamlessly on GitHub Pages.
 
-1. **`recipientName`**: Change to her name or nickname (e.g. `"Maya"`, `"Aisha"`, etc.).
-2. **`senderName`**: Put your name (e.g. `"Rajiv"`).
-3. **`letterHeadline` & `letterBody`**: Write from your heart. Mention what you realized and take full accountability for your actions.
-4. **`promises`**: Add your sincere commitments to do better.
-5. **`memories`**: Add special moments or qualities you love and cherish about her.
-6. **`contactButton`**: If you want to link directly to WhatsApp or SMS, set `link: "https://wa.me/YOUR_PHONE_NUMBER"` or leave `#`.
+### Step 1: Create a Repository on GitHub
+1. Open your browser and go to [github.com/new](https://github.com/new).
+2. Name your repository (e.g., `for-mam` or `sorry-letter`).
+3. Set it to **Public** (required for free GitHub Pages).
+4. Click **Create repository** (do NOT check "Add a README" or ".gitignore" as they already exist).
 
----
-
-## 🚀 How to Run & Self-Host
-
-### Option 1: Instant Local Preview (Python 3)
-Run in your terminal:
+### Step 2: Push Your Code
+In your terminal, run:
 ```bash
+cd /Users/rajiv/.gemini/antigravity/scratch/sorry-website
+git remote add origin https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME.git
+git push -u origin main
+```
+*(Replace `YOUR_GITHUB_USERNAME` and `YOUR_REPO_NAME` with your actual GitHub username and repository name).*
+
+### Step 3: Enable GitHub Pages
+1. On your GitHub repository page, go to **Settings** (top right tab).
+2. On the left sidebar, click **Pages**.
+3. Under **Branch**, select `main` from the dropdown and leave folder as `/(root)`.
+4. Click **Save**.
+
+Within 60 seconds, GitHub will give you a live HTTPS link:
+```text
+https://YOUR_GITHUB_USERNAME.github.io/YOUR_REPO_NAME/
+```
+You can share this link directly with her.
+
+---
+
+## 📱 WhatsApp Integration
+- Target Number: `+918299653531`
+- Tapping any of the response buttons immediately opens WhatsApp on her phone with a pre-filled gentle message (e.g., *"I need some time and space right now, Rajiv"* or *"Let's talk when I feel ready, Rajiv"*).
+- The prominent green button at the bottom directly opens WhatsApp to start a conversation with you.
+
+---
+
+## 💻 Local Testing
+To preview the website locally anytime:
+```bash
+cd /Users/rajiv/.gemini/antigravity/scratch/sorry-website
 python3 serve.py
 ```
-Open **[http://localhost:8080](http://localhost:8080)** in your browser.
-
-### Option 2: Docker / Docker Compose (Self-Hosting on VPS)
-If you have a Linux VPS (DigitalOcean, Hetzner, AWS, etc.):
-```bash
-docker compose up -d --build
-```
-Your website will be live on port `8080` (or proxy through Nginx/Caddy for SSL `https://`).
-
-### Option 3: Free 1-Click Hosting (Cloudflare Pages / Vercel / GitHub Pages)
-Because this project is built with clean static HTML/CSS/JS with zero external build steps, you can deploy it instantly:
-- **Cloudflare Pages**: Link your repository or upload the folder for a free `*.pages.dev` HTTPS link.
-- **Vercel / Netlify**: Drag-and-drop the `sorry-website` folder directly into the Netlify dashboard for an instant public URL.
-- **GitHub Pages**: Push this directory to a GitHub repo, go to `Settings > Pages`, and select `main` branch.
-
----
-
-## ✨ Features Included
-- 💌 **Gentle Wax-Sealed Envelope**: Opens with smooth 3D CSS transition when clicked.
-- 🌸 **Ambient Floating Petals & Light Dust**: Soft drifting particles on canvas.
-- 🎶 **Zero-Dependency Synthesized Music Box**: Built-in soothing ambient chords using the Web Audio API (works offline, no mp3 file needed; supports custom mp3 if preferred).
-- 🕊️ **Zero-Pressure Response Actions**: Interactive gentle reply choices that acknowledge her space and feelings first.
-- 🌓 **Theme Toggle**: Romantic Dusk mode (default) and Soft Blush light mode.
-- 📱 **100% Mobile Responsive**: Perfectly tailored for viewing on mobile devices.
-
+Open **[http://localhost:8080](http://localhost:8080)**.
