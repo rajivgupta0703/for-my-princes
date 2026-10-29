@@ -1,0 +1,8 @@
+services:
+  sorry-website:
+    build: .
+    container_name: sorry-letter-site
+    restart: unless-stopped
+    ports:
+      - "8080:80"
+
